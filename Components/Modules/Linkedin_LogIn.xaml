@@ -113,15 +113,15 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Linkedin_LogIn" sap:VirtualizedContainerService.HintSize="866.4000000000001,4833.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Linkedin_LogIn" sap:VirtualizedContainerService.HintSize="866.4000000000001,4969.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch 'Linkedin_LogIn'" sap:VirtualizedContainerService.HintSize="520,4810.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch 'Linkedin_LogIn'" sap:VirtualizedContainerService.HintSize="520,4946.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence sap2010:Annotation.AnnotationText="Realiza el inicio de sesión en Linkedin." DisplayName="Sequence 'Linkedin_LogIn'" sap:VirtualizedContainerService.HintSize="518.4,3839.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence sap2010:Annotation.AnnotationText="Realiza el inicio de sesión en Linkedin." DisplayName="Sequence 'Linkedin_LogIn'" sap:VirtualizedContainerService.HintSize="518.4,3975.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="User" />
             <Variable x:TypeArguments="ss:SecureString" Name="Password" />
@@ -141,13 +141,13 @@
               <OutArgument x:TypeArguments="ss:SecureString" x:Key="out_Password">[Password]</OutArgument>
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
-          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: LinkedIn Login, Sign in | LinkedIn" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484.8,3232" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" IsIncognito="True" OpenMode="IfNotOpen" ScopeGuid="4953b949-ebd7-44b1-b206-bdb202b0602e" Version="V2" WindowResize="Maximize">
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: LinkedIn Login, Sign in | LinkedIn" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484.8,3368" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" IsIncognito="True" OpenMode="IfNotOpen" ScopeGuid="4953b949-ebd7-44b1-b206-bdb202b0602e" Version="V2" WindowResize="Maximize">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="451.2,2943.2" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="451.2,3119.2" sap2010:WorkflowViewState.IdRef="Sequence_13">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:Boolean" Name="AgreeJoinPopupExists" />
                     <Variable x:TypeArguments="x:Boolean" Name="AlternativeFormExists" />
@@ -157,6 +157,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="417.6,176" sap2010:WorkflowViewState.IdRef="LogMessage_28" Level="Info" Message="[&quot;Se va a comprobar que tipo de formulario aparece.&quot;]" />
                   <ui:UiElementExists DisplayName="Element Exists 'Username'" Exists="[AlternativeFormExists]" sap:VirtualizedContainerService.HintSize="417.6,139.2" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
                     <ui:UiElementExists.Target>
                       <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d305b454-ade2-42a4-8e35-cbc48c4c2ac3" InformativeScreenshot="286d22e787dc8180e65fb60ab1d5933c" Selector="&lt;webctrl id='username' tag='INPUT' /&gt;" TimeoutMS="3000">
