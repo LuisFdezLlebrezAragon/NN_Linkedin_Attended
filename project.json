@@ -1,5 +1,5 @@
 {
-  "name": "STRUGAL_Framework",
+  "name": "NN_Linkedin_Attended",
   "projectId": "e39c19b0-fb74-44c8-b780-4728c3a8aa69",
   "description": "Framework base para procesos atendidos, desatendidos con arquitectura Dispatcher-Performer e integraciones de STRUGAL.",
   "main": "Main.xaml",
@@ -19,9 +19,7 @@
   "entitiesStores": [
     {
       "serviceDocument": ".entities/EntitiesStore.json",
-      "tenantName": "DEV",
-      "namespace": "STRUGAL_Framework",
-      "uniqueReference": "s8Ay0CuRhLNm1ne02uCk/IrXGwvNaoxastCKnCgLEoE="
+      "namespace": "STRUGAL_Framework"
     }
   ],
   "schemaVersion": "4.0",
